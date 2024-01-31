@@ -3,10 +3,10 @@ import time
 import requests
 
 # Twilio credentials
-TWILIO_PHONE_NUMBER = "+13176085435"
-TO_PHONE_NUMBER = "+972526192372"
-TWILIO_SID = "ACdb69e47e7f43f25d10d26d97ed18dce8"
-TWILIO_AUTH_TOKEN = "ec821d8bdd58654eb8ca6b913f246272"
+TWILIO_PHONE_NUMBER = "   "
+TO_PHONE_NUMBER = "   "
+TWILIO_SID = "    "
+TWILIO_AUTH_TOKEN = "  "
 
 # Initialize emergency status
 emergency_triggered = False
@@ -27,7 +27,7 @@ def send_sms(message, location):
 
         if message.sid:
             print(f"Message sent successfully with SID: {message.sid}")
-            print(f"Sent message: {message_with_map}")  # הוספתי שורה זו
+            print(f"Sent message: {message_with_map}") 
         else:
             print("Failed to send message.")
     except Exception as e:
@@ -63,7 +63,7 @@ while not emergency_triggered:
         emergency_message = f"Emergency! ! ! ! \nTemperature: {current_temperature}°C"
         send_sms(emergency_message, location)
 
-        # אם הודעת החירום נשלחה, אין יותר שאלה ידנית
+       
         emergency_triggered = True
 
     # Pause to avoid sending messages too quickly
