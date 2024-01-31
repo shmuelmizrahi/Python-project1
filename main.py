@@ -3,10 +3,10 @@ import time
 import requests
 
 # Twilio credentials
-TWILIO_PHONE_NUMBER = "   "
-TO_PHONE_NUMBER = "   "
-TWILIO_SID = "    "
-TWILIO_AUTH_TOKEN = "  "
+TWILIO_PHONE_NUMBER =  "Enter your details"
+TO_PHONE_NUMBER = "Enter your details"
+TWILIO_SID = "Enter your details"
+TWILIO_AUTH_TOKEN = "Enter your details"
 
 # Initialize emergency status
 emergency_triggered = False
